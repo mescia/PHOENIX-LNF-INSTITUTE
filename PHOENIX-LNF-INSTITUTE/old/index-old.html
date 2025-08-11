@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LNF INSTITUTE PHOENIX — Short-Stay Visitors</title>
+  <meta name="description" content="PHOENIX hosts short-stay visitors (1–4 weeks) to catalyze discussions in particle physics phenomenology, aligned with LNF experimental activities." />
+  <meta name="author" content="LNF INSTITUTE PHOENIX" />
+  <link rel="icon" href="assets/favicon.svg" />
+
+  <style>
+    :root {
+      --bg: #ffffff; /* white background */
+      --bg-elev: #ffffff;
+      --text: #101526; /* dark text */
+      --muted: #33425b;
+      --brand: #0a2a6a; /* deep blue */
+      --brand-2: #00a650; /* green accent */
+      --accent: #0a66c2;  /* link accent */
+      --card: #ffffff;
+      --border: #e6ecff;
+      --shadow: 0 8px 24px rgba(16, 21, 38, 0.06);
+      --radius: 14px;
+      --maxw: 1150px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+    header.site {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+    .brand { display: flex; gap: 12px; align-items: center; font-weight: 800; letter-spacing: 0.2px; color: var(--brand); }
+    .brand img { height: 40px; width: auto; }
+    .nav a { margin-left: 18px; color: var(--text); opacity: 0.9; }
+    .nav a.cta {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #ffffff; padding: 10px 14px; border-radius: 12px; box-shadow: var(--shadow);
+      font-weight: 700; border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .hero { background: #ffffff; border-bottom: 1px solid var(--border); }
+    .hero-inner { padding: 56px 0 38px; }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+    h1 { font-size: clamp(30px, 3.8vw, 56px); margin: 0 0 8px; line-height: 1.15; color: var(--brand); }
+    h2 { font-size: 28px; margin-top: 0; color: var(--brand); }
+    .tagline { color: var(--muted); font-size: clamp(15px, 1.4vw, 18px); line-height: 1.5; }
+
+    .section { padding: 48px 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    .pill { padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+
+    .actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-weight: 700; box-shadow: var(--shadow); }
+    .btn.primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #ffffff; }
+
+    .key-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .stat { padding: 14px; border-radius: var(--radius); background: #f7faff; border: 1px solid var(--border); }
+    .stat h3 { margin: 0; font-size: 26px; color: var(--brand); }
+
+    details.faq { margin-bottom: 10px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; }
+    details.faq summary { cursor: pointer; font-weight: 700; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 14px; background: #fff; }
+  </style>
+
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+  <header class="site" role="banner" aria-label="Main navigation">
+    <div class="container nav">
+      <div class="brand" aria-label="PHOENIX brand">
+        <img src="assets/LNFlogo.jpg" alt="LNF INSTITUTE PHOENIX logo"  style="max-height:290px; "/>
+        <span>LNF INSTITUTE PHOENIX</span>
+      </div>
+      <nav aria-label="Section links">
+        <a href="#programs">Program</a>
+        <a href="#apply">Apply</a>
+        <a href="governance.html">Governance</a>
+        <a class="cta" href="#apply" aria-label="Apply now to PHOENIX">Apply Now</a>
+      
+        <a href="visitor-info.html">Visitor Info</a>
+        </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO with big centered logo & institute name -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="card" style="padding:28px; text-align:center;">
+          <img src="assets/phoenix-logo.png" alt="LNF INSTITUTE PHOENIX logo" style="max-height:390px; width:auto; display:block; margin:0 auto 12px;" />
+          <h1 style="font-size:clamp(44px,5.4vw,76px); margin-bottom:6px;">LNF INSTITUTE PHOENIX</h1>
+          <p class="tagline" style="font-size:clamp(16px,1.6vw,20px);">Phenomenology Hub Of Emerging New Ideas, young researchers and eXploration</p>
+        </div>
+
+        <div class="key-stats" role="region" aria-label="Key program stats" style="margin-top:18px;">
+          <div class="stat"><h3>1–4 weeks</h3><p class="muted">Short-Stay Visitors</p></div>
+          <div class="stat"><h3>Rolling</h3><p class="muted">Calls & invitations</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM: Only Short-Stay Visitors -->
+    <section class="section" id="programs" aria-labelledby="programs-h">
+      <div class="container">
+        <h2 id="programs-h">Short-Stay Visitors (1–4 weeks)</h2>
+        <div class="grid">
+          <div class="pill">
+            <p>Targeted visits for joint papers, code/data sprints, or rapid exploration of new directions in phenomenology aligned with LNF experimental activities.</p>
+            <ul class="list">
+              <li>Office and <strong>guesthouse accommodation</strong> (according to availability)</li>
+              <li>Whiteboard days & focused working sessions</li>
+              <li>Open seminars and discussion forums</li>
+              <li>Ideal for kick-starting new collaborations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY -->
+    <section class="section" id="apply" aria-labelledby="apply-h">
+      <div class="container">
+        <h2 id="apply-h">How to Apply</h2>
+        <div class="grid">
+          <div class="pill">
+            <h3>Eligibility</h3>
+            <ul class="list">
+              <li>Researchers in phenomenology and related theory areas</li>
+              <li>Clear synergy with LNF’s experimental activities</li>
+              <li>Commitment to participate in PHOENIX seminars/discussions</li>
+            </ul>
+          </div>
+          <div class="pill">
+            <h3>What to Prepare</h3>
+            <ul class="list">
+              <li>CV and publication list (PDF)</li>
+              <li>1–2 page statement of purpose (project & LNF synergy)</li>
+              <li>Preferred dates (1–4 weeks), desired collaborators</li>
+            </ul>
+          </div>
+          <div class="pill">
+            <h3>Support</h3>
+            <ul class="list">
+              <li>Office and guesthouse accommodation — <em>according to availability</em></li>
+              <li>Seminar logistics and collaboration matchmaking</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pill" style="margin-top:18px;">
+          <h3>Submit Your Application</h3>
+          <p>Use the application form (link to be provided). For questions, write to <a href="mailto:phoenix@lnf.infn.it">phoenix@lnf.infn.it</a>.</p>
+          <p><a class="btn primary" href="#" aria-disabled="true" onclick="alert('Form link coming soon.'); return false;">Open Application Form</a></p>
+          <p class="muted" style="color:var(--muted)">By applying you agree to our code of conduct and data policy.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+        <div>
+          <strong>LNF INSTITUTE PHOENIX</strong> — Phenomenology Hub Of Emerging New Ideas
+          <div style="font-size:12px;color:var(--muted);">© <span id="year"></span> All rights reserved.</div>
+        </div>
+        <div style="display:flex;gap:12px;">
+          <a href="#apply">Apply</a>
+          <a href="#programs">Program</a>
+          <a href="governance.html">Governance</a>
+                  <a href="visitor-info.html">Visitor Info</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

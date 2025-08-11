@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Governance — LNF INSTITUTE PHOENIX</title>
+  <meta name="description" content="Governance of the LNF INSTITUTE PHOENIX: LNF Council, National Council Advisory, and International Council." />
+  <link rel="icon" href="assets/favicon.svg" />
+
+  <style>
+    :root {
+      --bg: #ffffff; /* white background */
+      --bg-elev: #ffffff;
+      --text: #101526; /* dark text */
+      --muted: #33425b;
+      --brand: #0a2a6a; /* deep blue */
+      --brand-2: #00a650; /* green accent */
+      --accent: #0a66c2;  /* link accent */
+      --card: #ffffff;
+      --border: #e6ecff;
+      --shadow: 0 8px 24px rgba(16, 21, 38, 0.06);
+      --radius: 14px;
+      --maxw: 1150px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+    header.site {
+      position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px);
+      background: rgba(255,255,255,0.85);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+    .brand { display: flex; gap: 12px; align-items: center; font-weight: 800; letter-spacing: 0.2px; color: var(--brand); }
+    .brand img { height: 40px; width: auto; }
+    .nav a { margin-left: 18px; color: var(--text); opacity: 0.9; }
+    .nav a.cta {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #ffffff; padding: 10px 14px; border-radius: 12px; box-shadow: var(--shadow);
+      font-weight: 700; border: 1px solid rgba(0,0,0,0.02);
+    }
+
+    .hero { background: #ffffff; border-bottom: 1px solid var(--border); }
+    .hero-inner { padding: 56px 0 38px; }
+
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow); }
+
+    h1 { font-size: clamp(30px, 3.8vw, 56px); margin: 0 0 8px; line-height: 1.15; color: var(--brand); }
+    h2 { font-size: 28px; margin-top: 0; color: var(--brand); }
+    .tagline { color: var(--muted); font-size: clamp(15px, 1.4vw, 18px); line-height: 1.5; }
+
+    .section { padding: 48px 0; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+    .pill { padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+
+    .actions { display: flex; gap: 12px; margin-top: 16px; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-weight: 700; box-shadow: var(--shadow); }
+    .btn.primary { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #ffffff; }
+
+    .key-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .stat { padding: 14px; border-radius: var(--radius); background: #f7faff; border: 1px solid var(--border); }
+    .stat h3 { margin: 0; font-size: 26px; color: var(--brand); }
+
+    details.faq { margin-bottom: 10px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; }
+    details.faq summary { cursor: pointer; font-weight: 700; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 14px; background: #fff; }
+  </style>
+
+  <style>
+    .table-wrap { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+    caption { text-align: left; padding: 12px 14px; font-weight: 800; color: var(--brand); }
+    thead th { background: #f3f6ff; color: var(--text); text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); }
+    tbody td, tbody th { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+    tbody tr:last-child td, tbody tr:last-child th { border-bottom: none; }
+    th[scope="row"] { font-weight: 700; }
+    .note { color: var(--muted); font-size: 14px; }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+  <header class="site" role="banner" aria-label="Main navigation">
+    <div class="container nav">
+      <div class="brand" aria-label="PHOENIX brand">
+        <img src="assets/phoenix-logo.png" alt="LNF INSTITUTE PHOENIX logo" />
+        <span>LNF INSTITUTE PHOENIX</span>
+      </div>
+      <nav aria-label="Section links">
+        <a href="index.html#programs">Program</a>
+        <a href="index.html#apply">Apply</a>
+        <a href="governance.html" aria-current="page">Governance</a>
+      
+        <a href="visitor-info.html">Visitor Info</a>
+        </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="card" style="padding:26px; text-align:center;">
+          <img src="assets/phoenix-logo.png" alt="LNF INSTITUTE PHOENIX logo" style="max-height:120px; width:auto; display:block; margin:0 auto 12px;" />
+          <h1>Governance</h1>
+          <p class="tagline">Institute governance of the PHOENIX program at LNF, including the LNF Council, the National Council (Advisory), and the International Council.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="gov-structure-h">
+      <div class="container">
+        <h2 id="gov-structure-h">Governance Structure</h2>
+
+        <div class="pill" role="region" aria-labelledby="lnf-council-h">
+          <h3 id="lnf-council-h">🏛️ LNF Council</h3>
+          <p class="note">Strategic leadership and operational oversight of the Institute’s research and development.</p>
+          <div class="table-wrap">
+            <table role="table">
+              <caption>LNF Council</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Position</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Paola Gianotti</th><td>General Director</td></tr>
+                <tr><th scope="row">Matteo Palutan</th><td>Research Director</td></tr>
+                <tr><th scope="row">Federico Mescia</th><td>Executive Director</td></tr>
+                <tr><th scope="row">Pasquale Di Nezza</th><td>Experimental Project Coordinator</td></tr>
+                <tr><th scope="row">Claudio Gatti</th><td>Experimental Project Coordinator</td></tr>
+                <tr><th scope="row">Simona Giovannella</th><td>Experimental Project Coordinator</td></tr>
+                <tr><th scope="row">Tommaso Spadaro</th><td>Experimental Project Coordinator</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pill" role="region" aria-labelledby="national-council-h">
+          <h3 id="national-council-h">🇮🇹 National Council — Advisory</h3>
+          <p class="note">National-level advisory body supporting scientific direction and institutional communication.</p>
+          <div class="table-wrap">
+            <table role="table">
+              <caption>National Council (Advisory)</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Position</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Nardecchia</th><td>National Council Director</td></tr>
+                <tr><th scope="row">Paradisi</th><td>Scientific Advisor</td></tr>
+                <tr><th scope="row">Tantalo</th><td>Scientific Advisor</td></tr>
+                <tr><th scope="row">Luca Di Luzio</th><td>Financial Advisor/td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pill" role="region" aria-labelledby="intl-council-h">
+          <h3 id="intl-council-h">🌍 International Council</h3>
+          <p class="note">Global advisory members fostering international collaboration and scientific exchange.</p>
+          <div class="table-wrap">
+            <table role="table">
+              <caption>International Council</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Position</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Gino Isidori</th><td>International Member</td></tr>
+                <tr><th scope="row">Marzia Bordone</th><td>International Member</td></tr>
+                <tr><th scope="row">Diego Guadagnoli</th><td>International Member</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <p class="note"><em>Note:</em> Titles and membership can be updated as needed. Please share any future changes and I’ll adjust the page.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+        <div>
+          <strong>LNF INSTITUTE PHOENIX</strong> — Phenomenology Hub Of Emerging New Ideas
+          <div style="font-size:12px;color:var(--muted);">© <span id="year"></span> All rights reserved.</div>
+        </div>
+        <div style="display:flex;gap:12px;">
+          <a href="index.html#apply">Apply</a>
+          <a href="index.html#programs">Program</a>
+          <a href="governance.html" aria-current="page">Governance</a>
+                  <a href="visitor-info.html">Visitor Info</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

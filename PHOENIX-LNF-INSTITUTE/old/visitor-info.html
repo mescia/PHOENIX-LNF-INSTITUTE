@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visitor Information — LNF INSTITUTE PHOENIX</title>
+  <meta name="description" content="Practical information for PHOENIX visitors: guesthouse, offices, campus access, travel, Wi‑Fi, safety, reimbursements, and contacts." />
+  <link rel="icon" href="assets/favicon.svg" />
+
+  <style>
+    :root {
+      --bg: #ffffff; /* white background */
+      --bg-elev: #ffffff;
+      --text: #101526; /* dark text */
+      --muted: #33425b;
+      --brand: #0a2a6a; /* deep blue */
+      --brand-2: #00a650; /* green accent */
+      --accent: #0a66c2;  /* link accent */
+      --card: #ffffff;
+      --border: #e6ecff;
+      --shadow: 0 8px 24px rgba(16, 21, 38, 0.06);
+      --radius: 14px;
+      --maxw: 1150px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+    header.site { position: sticky; top: 0; z-index: 10; backdrop-filter: blur(8px); background: rgba(255,255,255,0.85); border-bottom: 1px solid var(--border); }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; }
+    .brand { display: flex; gap: 12px; align-items: center; font-weight: 800; letter-spacing: 0.2px; color: var(--brand); }
+    .brand img { height: 40px; width: auto; }
+    .nav a { margin-left: 18px; color: var(--text); opacity: 0.9; }
+    .nav a.cta { background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #ffffff; padding: 10px 14px; border-radius: 12px; box-shadow: var(--shadow); font-weight: 700; border: 1px solid rgba(0,0,0,0.02); }
+
+    .hero { background: #ffffff; border-bottom: 1px solid var(--border); }
+    .hero-inner { padding: 44px 0 28px; }
+
+    h1 { font-size: clamp(30px, 3.8vw, 56px); margin: 0 0 8px; line-height: 1.15; color: var(--brand); }
+    h2 { font-size: 28px; margin-top: 0; color: var(--brand); }
+    h3 { color: var(--brand); }
+    .tagline { color: var(--muted); font-size: clamp(15px, 1.4vw, 18px); line-height: 1.5; }
+
+    .section { padding: 40px 0; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    @media (max-width: 980px) { .grid-2 { grid-template-columns: 1fr; } }
+    .pill { padding: 16px; background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+
+    .info-list { margin: 8px 0 0 0; padding-left: 18px; }
+
+    .callout { background: #f7fff9; border: 1px solid #cdeed9; padding: 12px 14px; border-radius: 12px; }
+
+    footer { border-top: 1px solid var(--border); padding: 24px 0; color: var(--muted); font-size: 14px; background: #fff; }
+  </style>
+
+</head>
+<body>
+  <a class="skip-link" href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;">Skip to content</a>
+
+  <header class="site" role="banner" aria-label="Main navigation">
+    <div class="container nav">
+      <div class="brand" aria-label="PHOENIX brand">
+        <img src="assets/phoenix-logo.png" alt="LNF INSTITUTE PHOENIX logo" />
+        <span>LNF INSTITUTE PHOENIX</span>
+      </div>
+      <nav aria-label="Section links">
+        <a href="index.html#programs">Program</a>
+        <a href="index.html#apply">Apply</a>
+        <a href="governance.html">Governance</a>
+        <a href="visitor-info.html" aria-current="page">Visitor Info</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Visitor Information</h1>
+        <p class="tagline">Everything you need to plan a smooth short-stay visit to PHOENIX at LNF.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="pill">
+          <h3>Before You Arrive</h3>
+          <ul class="info-list">
+            <li>Confirm your <strong>visit dates (1–4 weeks)</strong> with the PHOENIX office.</li>
+            <li>Request an <strong>invitation letter</strong> if needed for institutional approval or visas.</li>
+            <li>Share any <strong>special requirements</strong> (accessibility, IT/software, seminar needs).</li>
+          </ul>
+        </div>
+        <div class="pill">
+          <h3>Accommodation</h3>
+          <p>PHOENIX offers <strong>office space</strong> and access to the <strong>guesthouse</strong>, both <em>according to availability</em>.</p>
+          <ul class="info-list">
+            <li>Guesthouse bookings are coordinated via the PHOENIX office.</li>
+            <li>Check‑in/Check‑out: <em><!-- TODO: add times --></em></li>
+            <li>Facilities: Wi‑Fi, linens, shared kitchen area <em><!-- TODO: confirm --></em></li>
+          </ul>
+        </div>
+        <div class="pill">
+          <h3>Campus Access & Badges</h3>
+          <ul class="info-list">
+            <li>Pick up your <strong>visitor badge</strong> at reception <em><!-- TODO: building/desk --></em>.</li>
+            <li>Opening hours: <em><!-- TODO --></em></li>
+            <li>Bring a valid photo ID to collect your badge.</li>
+          </ul>
+        </div>
+        <div class="pill">
+          <h3>Offices & IT</h3>
+          <ul class="info-list">
+            <li>Assigned desk and whiteboard access.</li>
+            <li>Wi‑Fi via <strong>eduroam</strong> (preferred) or <strong>guest network</strong>.</li>
+            <li>Seminar rooms and AV support available on request.</li>
+          </ul>
+        </div>
+        <div class="pill">
+          <h3>Travel to LNF</h3>
+          <ul class="info-list">
+            <li>Closest airports: <em>Rome Fiumicino (FCO)</em> and <em>Rome Ciampino (CIA)</em>.</li>
+            <li>Train: regional lines to <em>Frascati</em> or <em>Tor Vergata</em>; then taxi or bus <em><!-- TODO: lines --></em>.</li>
+            <li>From Rome city: Metro + regional train combinations are available.</li>
+          </ul>
+        </div>
+        <div class="pill">
+          <h3>Safety & Emergencies</h3>
+          <ul class="info-list">
+            <li><strong>112</strong> — EU emergency number (police / medical / fire).</li>
+            <li>Campus security: <em><!-- TODO: phone --></em></li>
+            <li>Nearest urgent care / hospital: <em><!-- TODO --></em></li>
+          </ul>
+        </div>
+        <div class="pill">
+          <h3>Reimbursements & Support</h3>
+          <ul class="info-list">
+            <li>Keep original tickets and receipts for any reimbursable expenses.</li>
+            <li>Per‑diem or support availability is communicated in your invitation.</li>
+            <li>Submit expenses within <em><!-- TODO: days --></em> of your visit end date.</li>
+          </ul>
+        </div>
+        <div class="pill">
+          <h3>Food & Facilities</h3>
+          <ul class="info-list">
+            <li>Cafeteria hours: <em><!-- TODO: times --></em></li>
+            <li>Espresso bars and restaurants within walking distance.</li>
+            <li>Shuttle / local buses: <em><!-- TODO --></em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="pill" style="text-align:center;">
+          <img src="assets/campus-map-placeholder.png" alt="Campus map placeholder" style="max-width:100%; height:auto; border:1px solid var(--border); border-radius:12px;" />
+          <p class="tagline" style="margin-top:8px;">Campus & area map (placeholder). Replace with official map or Google Maps embed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="callout">
+          <strong>Contacts</strong><br/>
+          PHOENIX Office — <a href="mailto:phoenix@lnf.infn.it">phoenix@lnf.infn.it</a> · Tel: <em><!-- TODO --></em><br/>
+          Visitor logistics & onboarding — <em><!-- TODO: name & email --></em>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;">
+        <div>
+          <strong>LNF INSTITUTE PHOENIX</strong> — Phenomenology Hub Of Emerging New Ideas
+          <div style="font-size:12px;color:var(--muted);">© <span id="year"></span> All rights reserved.</div>
+        </div>
+        <div style="display:flex;gap:12px;">
+          <a href="index.html#apply">Apply</a>
+          <a href="index.html#programs">Program</a>
+          <a href="governance.html">Governance</a>
+          <a href="visitor-info.html" aria-current="page">Visitor Info</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
